@@ -1,0 +1,165 @@
+---
+permalink: /Minimalist_Professional_Golden_Fern
+---
+
+<!--
+    🌟 Minimalist Professional Portfolio Template 🌟
+    
+    Author: Madhurima Rawat 👩‍💻
+    Date: June 3, 2025 📅
+    Repository: https://github.com/madhurimarawat/Portfolio-Templates 🔗
+    
+    Description:
+    This HTML template provides a clean, minimalist portfolio structure featuring:
+    - 🏠 Home section with name, role & bio
+    - 💻 Projects showcase
+    - 💡 Skills list
+    - 🔗 Social media links
+    - 🎓 Education & Certifications
+    - 📄 Research papers
+    - 🎨 Hobbies & Interests
+    
+    Features:
+    - Responsive navigation with icons
+    - Dark mode toggle 🌙
+    - Uses Font Awesome for visual icons
+    - External CSS for light & dark themes
+    - All essential meta tags for SEO, responsiveness, and social media preview included 📱🔍✨
+    
+    Usage:
+    Customize content in the respective sections.
+    Link your JavaScript file to dynamically load content.
+    
+    Enjoy building your professional online presence! 🚀
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Minimalist professional portfolio template by Jane Doe showcasing projects, skills, social links, education, and more." />
+    <meta name="keywords" content="portfolio, minimalist, web developer, projects, skills, education, Jane Doe" />
+    <meta name="author" content="Jane Doe" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/title-icon.png" />
+
+    <!-- Open Graph / Facebook Preview -->
+    <meta property="og:title" content="Minimalist Portfolio by Jane Doe" />
+    <meta property="og:description"
+        content="Clean, professional portfolio template featuring projects, skills, social links, and more." />
+    <meta property="og:image" content="site-previews/website_1.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://madhurimarawat.github.io/Portfolio-Templates" />
+
+    <!-- Twitter Card Preview -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Minimalist Portfolio by Jane Doe" />
+    <meta name="twitter:description"
+        content="Clean, professional portfolio template featuring projects, skills, social links, and more." />
+    <meta name="twitter:image" content="site-previews/website_1.png" />
+
+    <title>Golden Fern 🌿 Portfolio</title>
+
+    <!-- CSS for styles and dark mode toggle -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/Minimalist_Professional/css/variables.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/Minimalist_Professional/css/main-styles.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/Minimalist_Professional/Golden_Fern/css/index.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/Minimalist_Professional/Golden_Fern//css/index-dark.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/Minimalist_Professional/css/responsive-styles.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Navigation links with icons -->
+                <li><a href="{{ site.baseurl }}/" target="_parent" class="nav-link"><i class="fas fa-house"></i>
+                        Home</a>
+                </li>
+                <!-- 🏠 Home -->
+                <li><a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a></li>
+                <!-- 💻 Projects -->
+                <li><a href="#skills" class="nav-link"><i class="fas fa-lightbulb"></i> Skills</a></li>
+                <!-- 💡 Skills -->
+                <li><a href="#social" class="nav-link"><i class="fas fa-share-alt"></i> Socials</a></li>
+                <!-- 🔗 Social Links -->
+                <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <!-- 🎓 Education -->
+                <li><a href="#mode" class="nav-link"><i class="fas fa-moon"></i> Dark Mode</a></li>
+                <!-- 🌙 Dark Mode Toggle -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section with user basic info -->
+        <section id="home" class="section home-section">
+            <h1 id="name" class="name"></h1> <!-- 👤 User Name -->
+            <p id="role" class="role"></p> <!-- 🎯 User Role / Title -->
+            <p id="bio" class="bio"></p> <!-- 📝 Short Bio -->
+        </section>
+
+        <!-- Social links with icons -->
+        <section id="social" class="section social-section">
+            <h2 class="section-heading">Social Links</h2>
+            <div id="social-links" class="social-links"></div> <!-- 🔗 Social Media Icons and Links -->
+        </section>
+
+        <!-- Skills list -->
+        <section id="skills" class="section skills-section">
+            <h2 class="section-heading">Skills</h2>
+            <ul id="skills-list" class="skills-list"></ul> <!-- 💼 List of skills -->
+        </section>
+
+        <!-- Projects showcase -->
+        <section id="projects" class="section projects-section">
+            <h2 class="section-heading">Projects</h2>
+            <div id="projects-list" class="projects-list section-list"></div> <!-- 📂 Project cards -->
+        </section>
+
+        <!-- Certifications display -->
+        <section id="certifications" class="section certifications-section">
+            <h2 class="section-heading">Certifications</h2>
+            <div id="certifications-list" class="certifications-list section-list"></div> <!-- 🎓 Certifications -->
+        </section>
+
+        <!-- Education background -->
+        <section id="education" class="section education-section">
+            <h2 class="section-heading">Education</h2>
+            <div id="education-table" class="education-table section-list"></div> <!-- 🏫 Education history -->
+        </section>
+
+        <!-- Research papers -->
+        <section id="research" class="section research-section">
+            <h2 class="section-heading">Research Papers</h2>
+            <div id="research-papers" class="research-list section-list"></div> <!-- 📄 Research publications -->
+        </section>
+
+        <!-- Hobbies and interests -->
+        <section id="hobbies" class="section hobbies-section">
+            <h2 class="section-heading">Hobbies & Interests</h2>
+            <ul id="hobbies-list" class="hobbies-list section-list"></ul> <!-- 🎨 List of hobbies -->
+        </section>
+    </main>
+
+    <!-- Main JavaScript to dynamically load content -->
+    <script src="{{ site.baseurl }}/js/index.js"></script>
+</body>
+
+<footer class="footer">
+    <!-- Footer with dynamic year and name -->
+    <p>&copy; <span id="footer-year"></span> <span id="footer-name">@name</span>. All rights reserved.</p>
+    <!-- © Year & Author -->
+</footer>
+
+</html>
