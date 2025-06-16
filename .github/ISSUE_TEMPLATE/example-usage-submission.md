@@ -25,7 +25,7 @@ _(e.g., "Used the Blue Whisper template in my portfolio.")_
 ---
 
 ### 📢 **Want to Share More?**  
-We’d love to feature your Portfolio in the [Example Usage](#) section! 🚀  
+We’d love to feature your Portfolio in the [Example Usage](https://github.com/madhurimarawat/Portfolio-Templates/) section! 🚀  
 
 ### 🛠 **Want to Contribute?**  
-If you want to contribute icons/logos yourself, check out our [Contributing Guidelines](https://github.com/madhurimarawat/Portfolio-Templates/blob/main/CONTRIBUTING.md) and submit a pull request! 🎨🔧
+If you want to contribute themes/templates yourself, check out our [Contributing Guidelines](https://github.com/madhurimarawat/Portfolio-Templates/blob/main/CONTRIBUTING.md) and submit a pull request! 🎨🔧
