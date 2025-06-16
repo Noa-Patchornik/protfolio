@@ -9,17 +9,6 @@ assignees: madhurimarawat
 
 ---
 
----
-name: Example Usage Submission
-about: "Use this template to showcase your Portfolio using Portfolio-Templates! Submit a snapshot,
-  Portfolio link, and a short description to be featured in the Example Usage section.
-  \U0001F680"
-title: "\U0001F4F8 Example Usage Submission"
-labels: documentation, good first issue
-assignees: madhurimarawat
-
----
-
 ### **🔹 Portfolio Name:**  
 `<Your Portfolio Name>`  
 
