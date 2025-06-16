@@ -602,20 +602,33 @@ function toggleDarkMode() {
     if (isDark) {
         icon.classList.replace("fa-moon", "fa-sun");
         if (textNode) textNode.textContent = " Light Mode";
-        localStorage.setItem("darkMode", "enabled");
+        localStorage.setItem("Portfolio-Templates-darkMode", "enabled");
     } else {
         icon.classList.replace("fa-sun", "fa-moon");
         if (textNode) textNode.textContent = " Dark Mode";
-        localStorage.setItem("darkMode", "disabled");
+        localStorage.setItem("Portfolio-Templates-darkMode", "disabled");
     }
 }
 
-// Initialize dark mode based on localStorage
+// Initialize dark mode based on localStorage or system preference
 function initDarkMode() {
     const darkModeToggle = document.querySelector('a[href="#mode"]');
     const icon = darkModeToggle.querySelector("i");
 
-    if (localStorage.getItem("darkMode") === "enabled") {
+    // Use localStorage if available, else use system preference
+    const savedMode = localStorage.getItem("Portfolio-Templates-darkMode");
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    let isDark = false;
+    if (savedMode === "enabled") {
+        isDark = true;
+    } else if (savedMode === "disabled") {
+        isDark = false;
+    } else {
+        isDark = prefersDark;
+    }
+
+    if (isDark) {
         document.body.classList.add("dark-mode");
         icon.classList.replace("fa-moon", "fa-sun");
         darkModeToggle.childNodes[1].textContent = " Light Mode";
@@ -625,6 +638,7 @@ function initDarkMode() {
         darkModeToggle.childNodes[1].textContent = " Dark Mode";
     }
 }
+
 
 // Attach event listener on DOM ready
 document.addEventListener("DOMContentLoaded", () => {

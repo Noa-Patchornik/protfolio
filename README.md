@@ -222,15 +222,19 @@ The [`index.js`](https://github.com/madhurimarawat/Portfolio-Templates/blob/main
 ## ❓ FAQ
 
 **Q: How do I switch between light and dark modes?**
+
 A: It's automatic based on system settings, but you can customize the toggle using CSS/JavaScript.
 
 **Q: How do I get started?**
+
 **A:** Visit the `Getting_Started.md` file for setup instructions and usage steps.
 
 **Q: How do I view all templates and themes?**
+
 **A:** You can explore them on the website or in the project folders, each template and theme folder has a `README.md` file with preview images and theme information.
 
 **Q: How do I see a live demo of a theme?**
+
 **A:** Visit the live demo using this link format:
 🌐 `https://madhurimarawat.github.io/Portfolio-Templates/Template_Name_Theme_Name`
 
@@ -240,15 +244,19 @@ A: It's automatic based on system settings, but you can customize the toggle usi
 *(Replace `Template_Name` and `Theme_Name` with the actual names as per themes and templates.)*
 
 **Q: Can I use my own fonts and color palette?**
+
 A: Absolutely! Update the styles in `variables.css` and link to your preferred font in `main-styles.css`.
 
 **Q: How do I test it locally?**
+
 A: Use the instructions in `Localhost_Setup/` or serve the site using a simple server like Python’s `http.server`.
 
 **Q: Is there any backend or database?**
+
 A: No, it's fully static and runs directly in the browser. All data is pulled from local JSON files.
 
 **Q: Can I deploy on Netlify or Vercel?**  
+
 A: Yes! Just remember to remove `permalink` keys in `_config.yml` or front matter to prevent routing issues.
 
 > 🛠️ **Note:**  
@@ -259,6 +267,43 @@ A: Yes! Just remember to remove `permalink` keys in `_config.yml` or front matte
 
 **A:** You can contribute by ⭐ starring the repository and sharing it with others!
 If you'd like to add a new template or theme, visit [`CONTRIBUTING.md`](CONTRIBUTING.md) for complete guidelines.
+
+---
+
+## 📸 Example Usage  
+
+🔗 [Submit your usage](https://github.com/madhurimarawat/Portfolio-Templates/issues) using our [Example Usage Submission Template](https://github.com/madhurimarawat/Portfolio-Templates/blob/main/.github/ISSUE_TEMPLATE/example-usage-submission.md)! 🚀  
+
+| **Snapshot**                                                                                                                      | **Project Name**  | **Description**                                     | **Project Link**                                                            |
+| --------------------------------------------------------------------------------------------------------------------------------- | ----------------- | --------------------------------------------------- | --------------------------------------------------------------------------- |
+| <img src="https://raw.githubusercontent.com/madhurimarawat/Portfolio-Templates/main/site-previews/website_1.png" width="250"> | Example Project   | Showcasing Portfolio-Templates in a website layout. | [View Project](https://madhurimarawat.github.io/Portfolio-Templates/)       |
+| Add yours here!                                                                                                                   | Your Project Name | Briefly describe how you used Portfolio-Templates.  | [Submit here](https://github.com/madhurimarawat/Portfolio-Templates/issues) |
+
+---
+
+## 👥 Contributors  
+
+All contributions are appreciated! Want to contribute? Check out:  
+📜 [Contribution Guidelines](https://github.com/madhurimarawat/Portfolio-Templates/blob/main/CONTRIBUTING.md) | 📩 [Issue Templates](https://github.com/madhurimarawat/Portfolio-Templates/blob/main/.github/ISSUE_TEMPLATE) | 🔄 [Pull Request Template](https://github.com/madhurimarawat/Portfolio-Templates/blob/main/.github/PULL_REQUEST_TEMPLATE.md)  
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/madhurimarawat">
+        <img src="https://github.com/madhurimarawat.png" width="100px;" alt="Madhurima Rawat"/>
+        <br /><sub><b>Madhurima Rawat</b></sub>
+      </a>
+      <br />💻 Maintainer
+    </td>
+    <td align="center">
+      <a href="https://github.com/username">
+        <img src="https://avatars.githubusercontent.com/u/87654321?v=4" width="100px;" alt="Contributor Name"/>
+        <br /><sub><b>Contributor Name</b></sub>
+      </a>
+      <br />🎨 New Template
+    </td>
+  </tr>
+</table>    
 
 ---
 

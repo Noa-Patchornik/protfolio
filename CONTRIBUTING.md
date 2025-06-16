@@ -226,6 +226,82 @@ A tranquil template inspired by soft blues and white space.
 
 ---
 
+### 🆕 Adding a New **Template** or **Theme**? Here's How to Update Your `index.html`, `variables.css`, and `index.css`
+
+#### 🧩 1. For a **New Template**
+
+If you're adding a brand new **template**, create a **new `<section>` block** inside your main `index.html` file like this:
+
+```html
+<!-- 🌿 Nature-Inspired Templates -->
+<section id="nature" class="template-section">
+  <h2 class="section-heading"><i class="fas fa-leaf"></i> Nature-Inspired</h2>
+  <p class="section-description">Templates inspired by the calm and beauty of the natural world.</p>
+  
+  <div class="card-container">
+    <div class="section-card nature-canvas" data-href="{{ site.baseurl }}/Nature_Canvas">
+      <img src="{{ site.baseurl }}/Nature_Canvas/site-previews/website_1.png" alt="Nature Canvas Preview">
+      <a href="{{ site.baseurl }}/Nature_Canvas" class="section-link">Nature Canvas</a>
+    </div>
+  </div>
+</section>
+```
+
+📌 **Note:**
+
+* Use a unique `id` for your section (`id="nature"` above).
+* Inside `.card-container`, add `.section-card` for your template.
+
+#### 🎨 2. For a **New Theme under an Existing Template**
+
+Just add a new `.section-card` inside the existing `<section>` like this:
+
+```html
+<div class="section-card nature-canvas" data-href="{{ site.baseurl }}/Nature_Canvas">
+  <img src="{{ site.baseurl }}/Nature_Canvas/site-previews/website_1.png" alt="Nature Canvas Preview">
+  <a href="{{ site.baseurl }}/Nature_Canvas" class="section-link">Nature Canvas</a>
+</div>
+```
+
+#### 🎨 3. Update `variables.css`
+
+Add a new color variable for your theme:
+
+```css
+/* === Nature-Inspired === */
+--color-nature-canvas: #1ba35d;
+```
+
+#### 🎨 4. Update `index.css` Styling
+
+Add section-specific card styles for border, shadow, and hover:
+
+```css
+/* Nature Section Cards */
+#nature .section-card:nth-child(1) {
+  border-block: 5px solid var(--color-nature-canvas);
+  box-shadow: 0 4px 12px var(--color-nature-canvas);
+}
+
+#nature .section-card:nth-child(1) .section-link {
+  color: var(--color-nature-canvas);
+}
+
+/* Nature Section Cards Hover */
+#nature .section-card:nth-child(1):hover {
+  box-shadow: 0 10px 18px var(--color-nature-canvas);
+}
+```
+
+📝 **Summary**
+
+* ✨ Templates ➜ Add a new section in `index.html`
+* 🎨 Themes ➜ Add a new `.section-card` inside an existing section
+* 🎨 Add color in `variables.css`
+* 🧑‍🎨 Style in `index.css` using `nth-child` selectors
+
+---
+
 ## 📸 Site Previews
 
 > [!TIP]
@@ -246,20 +322,26 @@ A tranquil template inspired by soft blues and white space.
 
 ## 🧑‍💻 Submit a Pull Request
 
-> [!NOTE]
-> Once you're ready, submit a PR to `main`.
+When you're done, [submit a PR](https://github.com/madhurimarawat/Portfolio-Templates/pulls) to `main`.
 
-* Include a short and clear description.
-* Mention if the template supports dark mode or themes.
-* Attach the preview screenshots and demo link.
+* Use the official PR template → [`.github/PULL_REQUEST_TEMPLATE.md`](https://github.com/madhurimarawat/Portfolio-Templates/blob/main/.github/PULL_REQUEST_TEMPLATE.md)
+* Mention if your template supports **dark mode**
+* Include preview image(s) and demo link
 
 ## 💌 Need Help?
 
-Feel free to **open an issue** or reach out directly if:
+Open an issue using the [Issue Template](https://github.com/madhurimarawat/Portfolio-Templates/issues) if you:
 
-* You're unsure where to add your theme.
-* Want design feedback.
-* Need a base to start with.
+* Need guidance
+* Want design feedback
+* Are unsure where to start
+
+🔹 **Issue Templates Available:**
+
+* 🆕 [New Template/Theme Request](https://github.com/madhurimarawat/Portfolio-Templates/issues/new?template=new-template-theme-request.md) – Propose a new theme or layout
+* 🛠️ [Bug Report](https://github.com/madhurimarawat/Portfolio-Templates/issues/new?template=bug_report.md) – Report any issues or glitches
+* 💡 [Feature Request](https://github.com/madhurimarawat/Portfolio-Templates/issues/new?template=feature_request.md) – Suggest improvements or additions
+* 🧪 [Example Usage Submission](https://github.com/madhurimarawat/Portfolio-Templates/issues/new?template=example-usage-submission.md) – Share how you're using the template
 
 Thanks for contributing! 🌟
 Let’s build a vibrant collection of creative, professional portfolios. 🎨🚀

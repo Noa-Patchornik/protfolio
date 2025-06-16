@@ -64,7 +64,8 @@
                         <li><a href="#nature"><i class="fas fa-leaf"></i> Nature</a></li>
                     </ul>
                 </li>
-                <li><a href="https://github.com/madhurimarawat" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <li><a href="https://github.com/madhurimarawat/Portfolio-Templates" target="_blank"><i
+                            class="fab fa-github"></i> GitHub</a>
                 </li>
                 <li><a href="https://www.linkedin.com/in/madhurima-rawat" target="_blank"><i
                             class="fab fa-linkedin"></i>
@@ -79,23 +80,29 @@
         <h2 class="section-heading"><i class="fas fa-pen-nib"></i> Minimalist Professional</h2>
         <p class="section-description">Clean, structured templates designed for a modern, professional look.</p>
         <div class="card-container">
-            <div class="section-card slate-ember">
+
+            <div class="section-card slate-ember" data-href="{{ site.baseurl }}/Minimalist_Professional_Slate_Ember">
                 <img src="{{ site.baseurl }}/Minimalist_Professional/Slate_Ember/site-previews/website_1.png"
                     alt="Slate Ember Preview">
-                <a href="{{ site.baseurl }}/Minimalist_Professional_Slate_Ember" class="section-link">Slate Ember</a>
+                <span class="section-link">Slate Ember</span>
             </div>
-            <div class="section-card golden-fern">
+
+            <div class="section-card golden-fern" data-href="{{ site.baseurl }}/Minimalist_Professional_Golden_Fern">
                 <img src="{{ site.baseurl }}/Minimalist_Professional/Golden_Fern/site-previews/website_1.png"
                     alt="Golden Fern Preview">
                 <a href="{{ site.baseurl }}/Minimalist_Professional_Golden_Fern" class="section-link">Golden Fern</a>
             </div>
-            <div class="section-card monochrome-grace">
+
+            <div class="section-card monochrome-grace"
+                data-href="{{ site.baseurl }}/Minimalist_Professional_Monochrome_Grace">
                 <img src="{{ site.baseurl }}/Minimalist_Professional/Monochrome_Grace/site-previews/website_1.png"
                     alt="Monochrome Grace Preview">
                 <a href="{{ site.baseurl }}/Minimalist_Professional_Monochrome_Grace" class="section-link">Monochrome
                     Grace</a>
             </div>
-            <div class="section-card blushed-graphite">
+
+            <div class="section-card blushed-graphite"
+                data-href="{{ site.baseurl }}/Minimalist_Professional_Blushed_Graphite">
                 <img src="{{ site.baseurl }}/Minimalist_Professional/Blushed_Graphite/site-previews/website_1.png"
                     alt="Blushed Graphite Preview">
                 <a href="{{ site.baseurl }}/Minimalist_Professional_Blushed_Graphite" class="section-link">Blushed
@@ -110,16 +117,16 @@
         <p class="section-description">Colorful and playful templates to showcase your personality and artistic flair.
         </p>
         <div class="card-container">
-            <div class="section-card rainbow-spectrum">
+            <div class="section-card rainbow-spectrum" data-href="{{ site.baseurl }}/Rainbow_Spectrum">
                 <img src="{{ site.baseurl }}/Rainbow_Spectrum/site-previews/website_1.png"
                     alt="Rainbow Spectrum Preview">
                 <a href="{{ site.baseurl }}/Rainbow_Spectrum" class="section-link">Rainbow Spectrum</a>
             </div>
-            <div class="section-card blue-whisper">
+            <div class="section-card blue-whisper" data-href="{{ site.baseurl }}/Blue_Whisper">
                 <img src="{{ site.baseurl }}/Blue_Whisper/site-previews/website_1.png" alt="Blue Whisper Preview">
                 <a href="{{ site.baseurl }}/Blue_Whisper" class="section-link">Blue Whisper</a>
             </div>
-            <div class="section-card teal-rose">
+            <div class="section-card teal-rose" data-href="{{ site.baseurl }}/Teal_Rose">
                 <img src="{{ site.baseurl }}/Teal_Rose/site-previews/website_1.png" alt="Teal Rose Preview">
                 <a href="{{ site.baseurl }}/Teal_Rose" class="section-link">Teal Rose</a>
             </div>
@@ -131,7 +138,7 @@
         <h2 class="section-heading"><i class="fas fa-leaf"></i> Nature-Inspired</h2>
         <p class="section-description">Templates inspired by the calm and beauty of the natural world.</p>
         <div class="card-container">
-            <div class="section-card nature-canvas">
+            <div class="section-card nature-canvas" data-href="{{ site.baseurl }}/Nature_Canvas">
                 <img src="{{ site.baseurl }}/Nature_Canvas/site-previews/website_1.png" alt="Nature Canvas Preview">
                 <a href="{{ site.baseurl }}/Nature_Canvas" class="section-link">Nature Canvas</a>
             </div>
@@ -148,24 +155,58 @@
         const toggleBtn = document.getElementById("theme-toggle");
         const body = document.body;
 
-        if (localStorage.getItem("theme") === "dark") {
-            body.classList.add("dark-mode");
-            toggleBtn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+        const savedMode = localStorage.getItem("Portfolio-Templates-darkMode");
+        const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+        let isDark = false;
+        if (savedMode === "enabled") {
+            isDark = true;
+        } else if (savedMode === "disabled") {
+            isDark = false;
+        } else {
+            isDark = prefersDark;
         }
 
+        // Apply theme based on resolved value
+        if (isDark) {
+            body.classList.add("dark-mode");
+            toggleBtn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+        } else {
+            body.classList.remove("dark-mode");
+            toggleBtn.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+        }
+
+        // Toggle event listener
         toggleBtn.addEventListener("click", () => {
             body.classList.toggle("dark-mode");
-            if (body.classList.contains("dark-mode")) {
+            const nowDark = body.classList.contains("dark-mode");
+
+            if (nowDark) {
                 toggleBtn.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
-                localStorage.setItem("theme", "dark");
+                localStorage.setItem("Portfolio-Templates-darkMode", "enabled");
             } else {
                 toggleBtn.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
-                localStorage.setItem("theme", "light");
+                localStorage.setItem("Portfolio-Templates-darkMode", "disabled");
             }
         });
 
+        // Make .section-card clickable via data-href
+        document.querySelectorAll('.section-card').forEach(card => {
+            card.addEventListener('click', function (e) {
+                // Prevent if clicked directly on a real link
+                if (e.target.tagName.toLowerCase() === 'a') return;
+
+                const url = this.getAttribute('data-href');
+                if (url) {
+                    window.location.href = url;
+                }
+            });
+        });
+
+        // Set year in footer
         document.getElementById("footer-year").textContent = new Date().getFullYear();
     </script>
+
 
 </body>
 
