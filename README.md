@@ -165,51 +165,51 @@ The [`index.js`](https://github.com/madhurimarawat/Portfolio-Templates/blob/main
 ## 🗂️ Directory Structure
 
 ```bash
-📁 Portfolio-Templates/
+Portfolio-Templates/
 │
-├── 📁 assets/                             # 🧩 Global assets and resources
-│   ├── 📁 user_data/                      # 📄 JSON files for user data (e.g., social_links.json, user.json)
-│   └── 📁 images/                         # 🖼️ Icons and visual assets used across all templates
+├── assets/                             # 🧩 Global assets and resources
+│   ├── user_data/                      # 📄 JSON files for user data (e.g., social_links.json, user.json)
+│   └── images/                         # 🖼️ Icons and visual assets used across all templates
 │
-├── 📁 Template_Name/                     # 🎨 Template folder with multiple themes (e.g., Minimalist_Professional)
+├── Template_Name/                     # 🎨 Template folder with multiple themes (e.g., Minimalist_Professional)
 │   ├── 📄 README.md                       # 📘 Overview of this template and its themes
-│   ├── 📁 css/                            # 🎨 Base CSS styles
+│   ├── css/                            # 🎨 Base CSS styles
 │   │   ├── main-styles.css               # 🧱 Base styles
 │   │   ├── variables.css                 # 🎨 Theme color tokens and CSS variables
 │   │   └── responsive-styles.css         # 📱 Responsive media queries
 │   │
-│   └── 📁 Theme_Name/                    # 🖌️ Individual theme folder (e.g., Slate_Ember, Golden_Fern)
+│   └── Theme_Name/                    # 🖌️ Individual theme folder (e.g., Slate_Ember, Golden_Fern)
 │       ├── 📄 README.md                   # 📘 Theme-specific notes and usage
 │       ├── index.html                    # 🏠 Theme homepage
-│       ├── 📁 css/                       # 🎨 Theme-specific styles
+│       ├── css/                       # 🎨 Theme-specific styles
 │       │   ├── index.css                 # ☀️ Light mode styles
 │       │   └── index-dark.css            # 🌙 Dark mode styles
-│       └── 📁 site-previews/             # 🔍 Preview images for the theme
+│       └── site-previews/             # 🔍 Preview images for the theme
 │           ├── website_1.png            # 🖼️ Meta tag / OG image
 │           ├── desktop_website.png      # 🖥️ Desktop preview
 │           └── mobile_website.png       # 📱 Mobile preview
 │
-├── 📁 Template_Name/                     # 🖼️ Template folder without themes (supports dark/light mode)
+├── Template_Name/                     # 🖼️ Template folder without themes (supports dark/light mode)
 │   ├── 📄 README.md                       # 📘 Description of the standalone template
-│   ├── 📁 css/                            # 🎨 Base + theme styles
+│   ├── css/                            # 🎨 Base + theme styles
 │   │   ├── main-styles.css               # 🧱 Base styles
 │   │   ├── variables.css                 # 🎨 Theme color tokens
 │   │   ├── responsive-styles.css         # 📱 Media queries
 │   │   ├── index.css                     # ☀️ Light mode styles
 │   │   └── index-dark.css                # 🌙 Dark mode styles
 │   ├── index.html                        # 🏠 Main HTML file
-│   └── 📁 site-previews/                 # 🔍 Preview images
+│   └── site-previews/                 # 🔍 Preview images
 │       ├── website_1.png                # 🖼️ Meta tag / OG image
 │       ├── desktop_website.png          # 🖥️ Desktop preview
 │       └── mobile_website.png           # 📱 Mobile preview
 │
-├── 📁 js/                                # ⚙️ JavaScript for all templates
+├── js/                                # ⚙️ JavaScript for all templates
 │   └── index.js                          # 📡 Central script to fetch and inject user data
 │
-├── 📁 Setup_Files/                       # 🛠️ Python scripts for automated setup
+├── Setup_Files/                       # 🛠️ Python scripts for automated setup
 │   └── 📄 README.md                       # 📘 Instructions for using setup utilities
 │
-├── 📁 Localhost_Setup/                   # 🌐 Local server launch configs (e.g., Jekyll)
+├── Localhost_Setup/                   # 🌐 Local server launch configs (e.g., Jekyll)
 │
 ├── 📄 README.md                           # 📘 Overview of the entire Portfolio-Templates project
 ├── 📄 LICENSE.md                         # 📜 License terms and usage permissions
