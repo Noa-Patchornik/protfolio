@@ -2,12 +2,14 @@
 ***********************************************************************************************
 * File Name   : Meta_Data_Updation.py
 * Author      : Madhurima Rawat
-* Date        : June 14, 2025
+* Date        : July 12, 2025
 * Description : A utility to update `index.html` in the parent directory by:
 *               1. Replacing the permalink with an empty front matter.
 *               2. Updating meta tags based on user input or JSON data.
 *               3. Modifying title, Open Graph tags, and social preview.
 *               4. Optionally auto-generates og:url using GitHub username.
+*               5. Dynamically cleans image paths under site-previews by removing intermediate
+                   folders.
 ***********************************************************************************************
 """
 
@@ -171,6 +173,21 @@ def update_meta_tags(content, metadata):
     content = re.sub(
         r"<title>.*?</title>", f'<title>{metadata["title"]}</title>', content
     )
+
+    # ✅ Dynamically fix content lines containing site-previews
+    cleaned_lines = []
+    for line in content.splitlines():
+        if 'content="{{ site.baseurl }}' in line and "site-previews" in line:
+            start = line.find("{{ site.baseurl }}")
+            end = line.find("site-previews")
+            if start != -1 and end != -1:
+                before = line[:start]
+                after = line[end:]
+                line = before + "{{ site.baseurl }}/" + after
+                print("✅ Fixed line:", line.strip())
+        cleaned_lines.append(line)
+
+    content = "\n".join(cleaned_lines)
 
     return content
 
