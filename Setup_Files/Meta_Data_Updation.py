@@ -76,7 +76,7 @@ def get_metadata():
 
         github_url = social.get("github", "https://github.com/janedoe")
         github_username = github_url.strip().split("/")[-1]
-        name = data.get("name", "Jane Doe")
+        name = data.get("name", "Madhurima Rawat")
         title = f"Professional Portfolio by {name}"
         description = (
             f"Professional portfolio template by {name} showcasing projects, "
