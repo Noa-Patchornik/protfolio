@@ -177,13 +177,16 @@ def update_meta_tags(content, metadata):
     # ✅ Dynamically fix content lines containing site-previews
     cleaned_lines = []
     for line in content.splitlines():
-        if 'content="{{ site.baseurl }}' in line and "site-previews" in line:
-            start = line.find("{{ site.baseurl }}")
+        if (
+            'content="{{ site.url }}{{ site.baseurl }}' in line
+            and "site-previews" in line
+        ):
+            start = line.find("{{ site.url }}{{ site.baseurl }}")
             end = line.find("site-previews")
             if start != -1 and end != -1:
                 before = line[:start]
                 after = line[end:]
-                line = before + "{{ site.baseurl }}/" + after
+                line = before + "{{ site.url }}{{ site.baseurl }}/" + after
                 print("✅ Fixed line:", line.strip())
         cleaned_lines.append(line)
 
