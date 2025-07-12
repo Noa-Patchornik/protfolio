@@ -32,6 +32,24 @@ You can either **manually edit these JSON files** or **use the automated setup s
 
 The file [`index.js`](https://github.com/madhurimarawat/Portfolio-Templates/blob/main/index.js) serves as the **central script** that fetches and distributes all user data across different templates and pages. This ensures consistency and simplifies updates across the project.
 
+In the `_config.yml` file, you can update your personal details and configure the preview images used in meta tags. The preview images are referenced using the `url` and `baseurl` values defined in that file.
+
+For example, the following meta tags fetch the preview image correctly:
+
+```html
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/site-previews/website_1.png" />
+<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/site-previews/website_1.png" />
+```
+
+Here is the current configuration in the [`_config.yml`](https://github.com/madhurimarawat/Portfolio-Templates/blob/main/_config.yml):
+
+```yml
+url: "https://madhurimarawat.github.io"
+baseurl: "/Portfolio-Templates"
+```
+
+Make sure the `site.url` and `site.baseurl` match your repository and GitHub Pages deployment path to ensure the preview image is fetched correctly.
+
 ---
 
 ## 🌐 Hosting
