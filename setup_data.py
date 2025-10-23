@@ -2,7 +2,7 @@ import json
 import os
 
 # 📁 Define the directory where JSON files will be saved
-output_dir = "/assets/user_data"
+output_dir = "assets/user_data"
 
 # 🛠️ Create the directory if it doesn't already exist
 os.makedirs(output_dir, exist_ok=True)

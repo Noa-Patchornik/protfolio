@@ -1,30 +1,109 @@
 [
     {
-        "name": "Project One",
-        "description": "A web application that helps users manage tasks efficiently.",
+        "name": "Recipes Website",
+        "description": "A full-stack recipe-sharing platform built with Vue 3, Node.js, and MySQL. Includes Spoonacular API integration, authentication, favorites, dynamic search, and responsive SPA design.",
         "link": {
-            "github": "https://github.com/janedoe/project-one",
-            "live_demo": "https://project-one.janedoe.dev"
+            "github": "https://github.com/Noa-Patchornik/Recipes-Website",
+            "live_demo": ""
+        },
+        "tools": [
+            "Vue 3",
+            "Node.js",
+            "MySQL",
+            "BootstrapVue",
+            "Swagger",
+            "REST API"
+        ],
+        "image": "https://img.freepik.com/free-photo/online-recipe-book-food-blogging_53876-138091.jpg"
+    },
+    {
+        "name": "Task Management App",
+        "description": "A full-stack task management system for creating, editing, filtering, and tracking tasks. Built with React (Vite) and FastAPI + MongoDB, fully containerized with Docker Compose.",
+        "link": {
+            "github": "https://github.com/Noa-Patchornik/Task-Manager",
+            "live_demo": ""
         },
         "tools": [
             "React",
-            "Node.js",
-            "MongoDB"
+            "FastAPI",
+            "Python",
+            "MongoDB",
+            "Docker"
         ],
-        "image": "https://img.freepik.com/premium-vector/project-typographic-header_277904-11460.jpg?w=2000"
+        "image": "https://cdn-icons-png.flaticon.com/512/1032/1032432.png"
     },
     {
-        "name": "Project Two",
-        "description": "An AI-powered chatbot built using Python and NLP libraries.",
+        "name": "Super-Lee HR System",
+        "description": "A multi-layer human resources management system built in Java. Implements CRUD operations, payroll management, contracts, and shift planning.",
         "link": {
-            "github": "https://github.com/janedoe/chatbot",
+            "github": "https://github.com/Noa-Patchornik/Super-Lee",
+            "live_demo": ""
+        },
+        "tools": [
+            "Java",
+            "SQLite",
+            "OOP",
+            "Design Patterns"
+        ],
+        "image": "https://cdn-icons-png.flaticon.com/512/189/189664.png"
+    },
+    {
+        "name": "Super Mario Maze Game",
+        "description": "An interactive Super Mario\u2013themed maze game built with JavaFX and MVVM architecture. Implements DFS, BFS, and Best-First algorithms for maze generation and solving.",
+        "link": {
+            "github": "https://github.com/Noa-Patchornik/SuperMario-Maze",
+            "live_demo": ""
+        },
+        "tools": [
+            "Java",
+            "JavaFX",
+            "MVVM",
+            "Algorithms",
+            "Client-Server"
+        ],
+        "image": "https://cdn-icons-png.flaticon.com/512/3039/3039391.png"
+    },
+    {
+        "name": "Network Speed Test",
+        "description": "A Python-based client-server app that simulates TCP and UDP protocols to measure transfer speed, latency, and packet loss. Ranked 1st in course evaluation.",
+        "link": {
+            "github": "https://github.com/Noa-Patchornik/Network-speed-CS",
             "live_demo": ""
         },
         "tools": [
             "Python",
-            "NLTK",
-            "Flask"
+            "Sockets",
+            "Networking",
+            "CLI"
         ],
-        "image": "https://xebrio.com/wp-content/uploads/2021/09/project-management-artifacts-banner-980x515.jpg"
+        "image": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+    },
+    {
+        "name": "Frida Kahlo Landing Page",
+        "description": "A clean, responsive landing page celebrating Frida Kahlo\u2019s art, built with HTML, CSS, and vanilla JavaScript. Focused on design, accessibility, and storytelling.",
+        "link": {
+            "github": "https://github.com/Noa-Patchornik/Frida-Kahlo-Website",
+            "live_demo": ""
+        },
+        "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "image": "https://cdn-icons-png.flaticon.com/512/616/616408.png"
+    },
+    {
+        "name": "Pacman SpaceShoot Game",
+        "description": "A browser-based arcade game combining Pacman gameplay with space shooter mechanics. Includes user registration, shooting mechanics, and dynamic scoring.",
+        "link": {
+            "github": "https://github.com/Noa-Patchornik/Pacman-Spaceshoot-game",
+            "live_demo": ""
+        },
+        "tools": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "image": "https://cdn-icons-png.flaticon.com/512/185/185211.png"
     }
 ]

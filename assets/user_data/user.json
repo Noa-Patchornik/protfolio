@@ -1,15 +1,24 @@
 {
-    "name": "Jane Doe",
-    "role": "Full Stack Developer | UI/UX Designer",
-    "bio": "Creative and detail-oriented developer passionate about building user-friendly digital experiences.",
+    "name": "Noa Patchornik",
+    "role": "Back-End Developer | Software Engineer",
+    "bio": "Passionate about backend development, scalable architecture, and clean, maintainable code. Currently expanding my skills through self-learning and participating in collaborative projects within the TCP community, working with multidisciplinary teams to build real-world software solutions.",
     "skills": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Node.js",
         "Python",
+        "FastAPI",
+        "Java",
+        "C#",
+        "C++",
+        "Node.js",
+        "React",
+        "Vue",
+        "SQL",
+        "MongoDB",
+        "Docker",
+        "GCP",
+        "Azure DevOps",
         "Git",
-        "Figma"
+        "REST APIs",
+        "OOP",
+        "Design Patterns"
     ]
 }
