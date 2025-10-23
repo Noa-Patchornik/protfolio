@@ -1,182 +1,147 @@
-/* ========== 🌐 Base ========== */
+/*
+----------------------------------------------------------------------
+Author: Madhurima Rawat 👩‍💻
+Template: Minimalist_Professional_Slate_Ember 🎨
+File: index.css 📄
+Location: /Minimalist_Professional/Slate_Ember/css/index.css
+----------------------------------------------------------------------
+Description:
+    🎯 This is the main stylesheet for the Slate Ember version of the
+       Minimalist_Professional personal portfolio template.
+
+    📐 Defines core layout and visual styling for elements including:
+        - Sections (Objective, Education, Experience, etc.)
+        - Buttons and interactive elements
+        - Color theming and background styles specific to Slate + Ember palette
+        - Typography: font families, sizes, and alignment
+        - Utility and helper classes for spacing and alignment
+
+    🌗 Works in conjunction with:
+        ✅ variables.css – CSS variables for global theming
+        ✅ main-styles.css – Shared base layout and component styles
+        ✅ index-dark.css – Dark mode overrides for this theme
+        ✅ responsive-styles.css – Responsive behavior for mobile/tablet
+
+----------------------------------------------------------------------
+*/
+
+/* General body styles */
 body {
-    color: #333;
-    transition: var(--text-grey) 0.3s, color 0.3s;
-    background-color: var(--bg-white);
+    background-color: var(--cream);
+    /* Light background */
+    color: var(--slate-blue);
+    /* Slate blue text */
 }
 
-/* ========== 🔝 Header & Navigation ========== */
+/* Header styling */
 header {
-    background-color: var(--header-white);
-    box-shadow: 0 2px 5px var(--hover-black);
+    background-color: var(--slate-blue);
 }
 
-nav a {
-    color: var(--text-grey);
+/* Make links fill the height and center content */
+nav a.nav-link {
+    color: var(--cream);
 }
 
 nav a:hover {
-    color: var(--text-blue);
+    color: var(--coral);
 }
 
-/* ========== ⬇️ Dropdown Menu ========== */
-.dropdown-menu {
-    background-color: var(--section-fill);
-    border: 1px solid var(--text-blue);
-    box-shadow: 0 2px 6px var(--hover-black);
-}
-
-/* ========== ⬇️ Dropdown Menu hover ========== */
-.dropdown-menu a:hover {
-    background-color: var(--header-white);
-    border: 1px solid var(--bg-white);
-}
-
-/* ========== 📄 Template Sections ========== */
-.template-section {
-    background-color: var(--bg-white);
-}
-
-.section-heading {
-    color: var(--heading-color);
-}
-
-.section-description {
+.bio {
     color: var(--light-grey);
+    /* Light gray text */
+}
+
+/* Section heading styles */
+.section-heading {
+    color: var(--slate-blue);
+    /* Heading text color */
+    border-bottom: 2px solid var(--coral);
+    /* Decorative underline */
+}
+
+/* Individual social link */
+.social-link {
+    color: var(--slate-blue);
+    /* Link text color */
+    border: 2px solid var(--slate-blue);
+    /* Border */
+}
+
+.social-link:hover {
+    background-color: var(--coral);
+    /* Change background */
+    color: var(--cream);
+    /* Change text color */
+    border-color: var(--coral);
+    /* Change border */
+}
+
+/* Individual skill item */
+.skills-list li {
+    background-color: var(--coral);
+    /* Skill badge color */
+    color: var(--cream);
+    /* Text color */
+    box-shadow: 0 2px 5px var(--dark-red);
+    /* Subtle shadow */
+}
+
+.skills-list li:hover {
+    background-color: var(--cream);
+    /* Invert colors */
+    color: var(--slate-blue);
+    box-shadow: 0 2px 5px var(--dark-red);
+    border-color: var(--slate-blue);
 }
 
 .section-card {
-    box-shadow: 0 4px 10px var(--hover-black);
-    background-color: var(--section-fill);
-    border-top: 4px solid var(--bg-white);
+    border: 2px solid var(--slate-blue);
+    /* Outer border */
+    background: var(--white);
+    /* Card background */
+    box-shadow: 0 4px 8px var(--dark-red);
+    /* Subtle coral shadow */
 }
 
-.section-link {
-    color: var(--heading-color);
+.section-card:hover {
+    box-shadow: 0 8px 16px var(--dark-red);
 }
 
-/* Minimalist Cards */
-.section-card:nth-child(1) {
-    border-block: 5px solid var(--color-slate-ember);
-    box-shadow: 0 4px 12px var(--color-slate-ember);
+/* -------------------------------------------
+   Project Section Styles
+------------------------------------------- */
+
+/* Project title */
+.section-subheading {
+    color: var(--slate-blue);
 }
 
-.section-card:nth-child(1) .section-link {
-    color: var(--color-slate-ember);
+
+/* Technologies/tools and certificates link used in the project */
+.section-meta {
+    color: var(--gray);
 }
 
-.section-card:nth-child(2) {
-    border-block: 5px solid var(--color-golden-fern);
-    box-shadow: 0 4px 12px var(--color-golden-fern);
+/* Links to project demos, GitHub, etc. */
+.section-links a {
+    color: var(--coral);
 }
 
-.section-card:nth-child(2) .section-link {
-    color: var(--color-golden-fern);
+/* Hover effect for project links */
+.section-links a:hover {
+    color: var(--slate-blue);
 }
 
-.section-card:nth-child(3) {
-    border-block: 5px solid var(--color-monochrome-grace);
-    box-shadow: 0 4px 12px var(--color-monochrome-grace);
-}
-
-.section-card:nth-child(3) .section-link {
-    color: var(--color-monochrome-grace);
-}
-
-.section-card:nth-child(4) {
-    border-block: 5px solid var(--color-blushed-graphite);
-    box-shadow: 0 4px 12px var(--color-blushed-graphite);
-}
-
-.section-card:nth-child(4) .section-link {
-    color: var(--color-blushed-graphite);
-}
-
-/* Creative Section Cards */
-#creative .section-card:nth-child(1) {
-    border-block: 5px solid var(--color-rainbow-spectrum);
-    box-shadow: 0 4px 12px var(--color-rainbow-spectrum);
-}
-
-#creative .section-card:nth-child(1) .section-link {
-    color: var(--color-rainbow-spectrum);
-}
-
-#creative .section-card:nth-child(2) {
-    border-block: 5px solid var(--color-blue-whisper);
-    box-shadow: 0 4px 12px var(--color-blue-whisper);
-}
-
-#creative .section-card:nth-child(2) .section-link {
-    color: var(--color-blue-whisper);
-}
-
-#creative .section-card:nth-child(3) {
-    border-block: 5px solid var(--color-teal-rose);
-    box-shadow: 0 4px 12px var(--color-teal-rose);
-}
-
-#creative .section-card:nth-child(3) .section-link {
-    color: var(--color-teal-rose);
-}
-
-/* Nature Section Cards */
-#nature .section-card:nth-child(1) {
-    border-block: 5px solid var(--color-nature-canvas);
-    box-shadow: 0 4px 12px var(--color-nature-canvas);
-}
-
-#nature .section-card:nth-child(1) .section-link {
-    color: var(--color-nature-canvas);
-}
-
-/* ========== 🔁 Hover Effects for Section Cards ========== */
-
-/* Minimalist Cards Hover */
-.section-card:nth-child(1):hover {
-    box-shadow: 0 10px 18px var(--color-slate-ember);
-}
-
-.section-card:nth-child(2):hover {
-    box-shadow: 0 10px 18px var(--color-golden-fern);
-}
-
-.section-card:nth-child(3):hover {
-    box-shadow: 0 10px 18px var(--color-monochrome-grace);
-}
-
-.section-card:nth-child(4):hover {
-    box-shadow: 0 10px 18px var(--color-blushed-graphite);
-}
-
-/* Creative Section Cards Hover */
-#creative .section-card:nth-child(1):hover {
-    box-shadow: 0 10px 18px var(--color-rainbow-spectrum);
-}
-
-#creative .section-card:nth-child(2):hover {
-    box-shadow: 0 10px 18px var(--color-blue-whisper);
-}
-
-#creative .section-card:nth-child(3):hover {
-    box-shadow: 0 10px 18px var(--color-teal-rose);
-}
-
-/* Nature Section Cards Hover */
-#nature .section-card:nth-child(1):hover {
-    box-shadow: 0 10px 18px var(--color-nature-canvas);
-}
-
-/* ========== 🌗 Theme Toggle Button ========== */
-button#theme-toggle {
-    color: var(--text-grey);
-}
-
-button#theme-toggle:hover {
-    color: var(--text-blue);
+/* Icon styling */
+.hobby-icon {
+    color: var(--coral);
+    /* Adjust to theme color */
 }
 
 .footer {
-    color: var(--gray);
-    background-color: var(--header-white);
+    background-color: var(--slate-blue);
+    /* light background */
+    color: var(--cream);
+    border-top: 1px solid var(--dark-white);
 }

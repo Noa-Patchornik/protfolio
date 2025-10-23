@@ -1,57 +1,70 @@
+/* -------------------------------------------
+   Scoped Dark Mode Styles 🌙🖤
+   -------------------------------------------
+   Author: Madhurima Rawat 👩‍💻
+   Purpose: Provides alternate styling when the
+            `dark-mode` class is applied to the
+            <body> element. Overrides light-mode
+            styles for better readability and 
+            visual balance in low-light settings 🌒.
+   Affected Elements:
+     - Body background and text 🖤📄
+     - Header and navigation links 🔗
+     - Section headings and bio text 📰
+     - Cards (project and certification) 🃏
+     - Social links 🌐
+   Usage:
+     - Add the class 'dark-mode' to <body> to
+       enable dark theme styling 🌘.
+------------------------------------------- */
+
+/* Scoped dark mode styles (when dark mode class is added to body) */
 body.dark-mode {
-    background-color: var(--bg-grey);
-    color: var(--bg-white);
+    background-color: var(--black);
+    /* Dark background */
+    color: var(--cream);
+    /* Light text */
 }
 
-body.dark-mode header,
-body.dark-mode .footer {
-    background-color: var(--light-grey);
-    box-shadow: 0 2px 5px var(--bg-white);
-    color: var(--bg-white)
+body.dark-mode .bio {
+    color: var(--coral);
+    /* Make bio text coral */
 }
 
-/* ========== 🌗 Theme Toggle Button ========== */
-body.dark-mode button#theme-toggle,
-body.dark-mode nav a {
-    color: var(--bg-white);
+body.dark-mode .section-heading {
+    color: var(--cream);
+    /* Headings in cream */
 }
 
-/* ========== ⬇️ Dropdown Menu ========== */
-body.dark-mode button#theme-toggle:hover,
-body.dark-mode nav a:hover {
-    color: var(--color-rainbow-spectrum);
-}
-
-/* ========== ⬇️ Dropdown Menu ========== */
-body.dark-mode .dropdown-menu {
-    background-color: var(--light-grey);
-    box-shadow: 0 2px 6px var(--header-white);
-    color: var(--bg-white);
-}
-
-/* ========== ⬇️ Dropdown Menu ========== */
-body.dark-mode .dropdown-menu a:hover {
-    color: var(--light-grey);
-}
-
-body.dark-mode .section-description {
-    color: var(--heading-color);
-}
-
-body.dark-mode .card-container {
-    background-color: var(--bg-grey);
-    color: var(--header-white);
-}
-
-body.dark-mode .template-section {
-    background-color: var(--bg-grey);
-    color: var(--header-white);
+body.dark-mode .social-link {
+    color: var(--cream);
+    /* Links in cream */
 }
 
 body.dark-mode .section-card {
-    background-color: var(--bg-white);
+    background-color: var(--dark-grey);
+    /* Darker card background */
+    box-shadow: 0 4px 8px var(--cream);
+    /* Subtle cream shadow */
 }
 
-body.dark-mode .section-link {
-    opacity: 1;
+body.dark-mode .section-card:hover {
+    box-shadow: 0 4px 16px var(--coral);
+    /* Subtle coral shadow */
+}
+
+body.dark-mode .section-heading,
+body.dark-mode .section-subheading {
+    color: var(--cream);
+    /* Project name in cream */
+}
+
+/* Technologies/tools and certificates link used in the project */
+body.dark-mode .section-meta {
+    color: var(--cream);
+}
+
+/* Shared margin for all project sub-elements */
+body.dark-mode .section-description {
+    color: var(--coral);
 }
