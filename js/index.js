@@ -70,8 +70,8 @@ document.querySelectorAll('nav a.nav-link').forEach(link => {
 
 
 // Paths to JSON files relative to this script location
-// *** תיקון נתיב: חוזר תיקייה אחת (מ-js) ואז ניגש ל-assets/user_data/ ***
-const basePath = "../assets/user_data/";
+
+const basePath = "/protfolio/assets/user_data/";
 
 const iconMap = {
     "email-id": "fas fa-envelope",   // 📧 Email icon (Font Awesome Solid)

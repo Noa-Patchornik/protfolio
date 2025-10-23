@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="
+            default-src 'self';
+            img-src 'self' data: https:;
+            style-src 'self' 'unsafe-inline' https:;
+            script-src 'self' 'unsafe-inline';
+            font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;">
+
 
         <meta name="description"
         content="Portfolio של נועה פצ'ורניק: הצגת פרויקטים, כישורים, השכלה ועוד." />
@@ -48,12 +55,7 @@
         <meta name="DC.title" content="Slate Ember Portfolio by Noa Patchornik">
     <meta name="DC.creator" content="Noa Patchornik">
 
-        <meta http-equiv="Content-Security-Policy" content="
-            default-src 'self';
-            img-src 'self' data: https:;
-            style-src 'self' 'unsafe-inline' https:;
-            script-src 'self' 'unsafe-inline';
-            font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com;">
+       
 
     <title>Noa's Slate Ember 🪻 Portfolio</title>
 
