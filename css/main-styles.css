@@ -53,6 +53,7 @@ nav a.nav-link {
     gap: 0.5rem;               /* space between icon and text (adjust if needed) */
     height: 100%;
     line-height: 1;            /* avoid extra vertical spacing */
+    font-size: 1.4rem;
 }
 
 /* base icon rules */
@@ -62,7 +63,7 @@ nav a.nav-link i {
     justify-content: center;
     line-height: 1;
     vertical-align: middle;
-    font-size: 1.1rem;         /* keep consistent size for icons */
+    font-size: 1.4rem;         /* keep consistent size for icons */
 }
 
 /* targeted fine-tune only for the Home icon */
@@ -176,20 +177,36 @@ main {
 /* Skills list layout */
 .skills-list {
     list-style: none;
-    /* Remove bullets */
     display: flex;
-    /* Flex layout */
+    flex-direction: column; /* *** שינוי קריטי: מעבר למבנה עמודה *** */
     gap: 1rem;
-    /* Spacing between skills */
-    flex-wrap: wrap;
-    /* Wrap items */
+    flex-wrap: wrap; 
     justify-content: center;
-    /* Center the items */
+    padding: 0; /* ודא איפוס */
+    align-items: flex-start; /* יישור לשמאל */
+}
+
+/* הקבוצה החדשה שמחזיקה את המיומנויות בתוך כל קטגוריה */
+.skills-group-list {
+    list-style: none;
+    display: flex; /* *** החזרת Flexbox לרמת המיומנויות *** */
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+/* סגנון כותרת הקטגוריה החדשה */
+.skill-category-header {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    text-align: left;
 }
 
 /* Individual skill item */
-.skills-list li {
-    /* Text color */
+.skills-group-list li { 
     padding: 0.5rem 1rem;
     /* Padding inside badge */
     border-radius: 20px;
@@ -198,7 +215,7 @@ main {
     /* Bold text */
 }
 
-.skills-list li:hover {
+.skills-group-list li:hover { 
     transform: translateY(-5px) scale(1.03);
     /* Moves up and scales up */
     border: 2px solid;

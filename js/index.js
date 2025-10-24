@@ -178,31 +178,46 @@ async function loadUserInfo() {
             const skillsList = document.getElementById("skills-list");
             skillsList.innerHTML = "";
             
+            // *** שינוי קריטי כאן: שימוש בקונטיינר לכל קטגוריה ***
             if (user.skills && typeof user.skills === 'object' && Object.keys(user.skills).length > 0) {
-                    Object.keys(user.skills).forEach(categoryName => {
+                
+                // ודא שהאלמנט הראשי (skillsList - שהוא ul) אינו משתמש ב-Flexbox אם הוא אמור להיות עמודה.
+                // נשתמש ב-skillsList כקונטיינר כללי ונוסיף אליו div לכל קטגוריה.
+
+                Object.keys(user.skills).forEach(categoryName => {
                     const skillsInCategory = user.skills[categoryName];
 
                     if (skillsInCategory && skillsInCategory.length > 0) {
-                        const categoryHeader = document.createElement("p");
+                        
+                        // 1. יצירת קונטיינר ראשי לקטגוריה אחת (יחליף את השורה)
+                        const categoryContainer = document.createElement("div");
+                        categoryContainer.className = "skill-category-group"; // קלאס חדש ל-CSS
+
+                        // 2. יצירת כותרת לקטגוריה
+                        const categoryHeader = document.createElement("h3"); // h3 במקום p לקבלת משקל חזותי
                         categoryHeader.className = "skill-category-header section-meta";
                         categoryHeader.textContent = categoryName + ":";
-                        skillsList.appendChild(categoryHeader);
+                        categoryContainer.appendChild(categoryHeader);
 
+                        // 3. יצירת רשימת מיומנויות (ul)
                         const skillGroup = document.createElement("ul");
-                        skillGroup.className = "skills-group-list";
+                        skillGroup.className = "skills-group-list"; // קלאס חדש ל-CSS
                         
+                        // 4. לולאה על המיומנויות
                         skillsInCategory.forEach(skill => {
                             const li = document.createElement("li");
                             li.textContent = skill;
                             skillGroup.appendChild(li);
                         });
-                        skillsList.appendChild(skillGroup);
+
+                        categoryContainer.appendChild(skillGroup);
+                        // הוספת כל קטגוריה כאלמנט נפרד לתוך ה-skillsList
+                        skillsList.appendChild(categoryContainer);
                     }
                 });
             } else {
                 hideSection("skills"); // ❌ Hide Skills if none
             }
-            // *** סוף שינוי קריטי ***
 
             // ✅ Set footer with the user object
             setFooter(user);
