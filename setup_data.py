@@ -17,8 +17,10 @@ user = {
         "within the TCP community, working with multidisciplinary teams to build real-world software solutions."
     ),
     "skills": [
-        "Python", "FastAPI", "Java", "C#", "C++", "Node.js", "React", "Vue", "SQL",
-        "MongoDB", "Docker", "GCP", "Azure DevOps", "Git", "REST APIs", "OOP", "Design Patterns"
+        "Python", "Java", "C#", "JavaScript", "C", "C++", "Node.js", "React", "Vue", "SQL", "Bash"
+        "MongoDB", "MySQL", "PostgreSQL", "MSSQL", "SQLite"
+        "Docker", "GCP", "Azure DevOps", "Git", "Swagger", 
+        "OOP", "Agile", "FastAPI", "REST APIs",  "Design Patterns"
     ]
 }
 
@@ -42,7 +44,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["Vue 3", "Node.js", "MySQL", "BootstrapVue", "Swagger", "REST API"],
-        "image": "https://img.freepik.com/free-photo/online-recipe-book-food-blogging_53876-138091.jpg"
+        "image": ""
     },
     {
         "name": "Task Management App",
@@ -55,7 +57,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["React", "FastAPI", "Python", "MongoDB", "Docker"],
-        "image": "https://cdn-icons-png.flaticon.com/512/1032/1032432.png"
+        "image": ""
     },
     {
         "name": "Super-Lee HR System",
@@ -68,12 +70,12 @@ projects = [
             "live_demo": ""
         },
         "tools": ["Java", "SQLite", "OOP", "Design Patterns"],
-        "image": "https://cdn-icons-png.flaticon.com/512/189/189664.png"
+        "image": ""
     },
     {
         "name": "Super Mario Maze Game",
         "description": (
-            "An interactive Super Mario–themed maze game built with JavaFX and MVVM architecture. "
+            "An interactive Super Mario-themed maze game built with JavaFX and MVVM architecture. "
             "Implements DFS, BFS, and Best-First algorithms for maze generation and solving."
         ),
         "link": {
@@ -81,7 +83,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["Java", "JavaFX", "MVVM", "Algorithms", "Client-Server"],
-        "image": "https://cdn-icons-png.flaticon.com/512/3039/3039391.png"
+        "image": ""
     },
     {
         "name": "Network Speed Test",
@@ -94,7 +96,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["Python", "Sockets", "Networking", "CLI"],
-        "image": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+        "image": ""
     },
     {
         "name": "Frida Kahlo Landing Page",
@@ -107,7 +109,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["HTML", "CSS", "JavaScript"],
-        "image": "https://cdn-icons-png.flaticon.com/512/616/616408.png"
+        "image": ""
     },
     {
         "name": "Pacman SpaceShoot Game",
@@ -120,18 +122,18 @@ projects = [
             "live_demo": ""
         },
         "tools": ["HTML", "CSS", "JavaScript"],
-        "image": "https://cdn-icons-png.flaticon.com/512/185/185211.png"
+        "image": ""
     }
 ]
 
 # 🎓 Certifications
 certifications = [
-    {
-        "title": "B.Sc. in Software & Information Systems Engineering",
-        "issuer": "Ben-Gurion University of the Negev",
-        "year": "2024",
-        "link": ""
-    }
+    # {
+    #     "title": "B.Sc. in Software & Information Systems Engineering",
+    #     "issuer": "Ben-Gurion University of the Negev",
+    #     "year": "2026",
+    #     "link": ""
+    # }
 ]
 
 # 🎓 Education
@@ -139,7 +141,7 @@ education = [
     {
         "degree": "B.Sc. in Software & Information Systems Engineering",
         "institution": "Ben-Gurion University of the Negev",
-        "year": "2020 - 2024",
+        "year": "2022 - 2026",
         "details": "Focused on software engineering, data structures, backend development, and system design."
     }
 ]
@@ -151,16 +153,6 @@ hobbies = [
         "publication": "Constantly exploring emerging tools and frameworks to improve development workflows.",
         "link": ""
     },
-    {
-        "title": "Open Source Contribution",
-        "publication": "Contributing to GitHub projects and developer communities.",
-        "link": "https://github.com/Noa-Patchornik"
-    },
-    {
-        "title": "Creative Writing & Reading",
-        "publication": "Enjoy reading tech blogs, biographies, and writing about problem-solving approaches.",
-        "link": ""
-    }
 ]
 
 # 📄 Research papers (empty for now)
