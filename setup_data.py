@@ -60,6 +60,20 @@ projects = [
         "image": "protfolio/assets/images/Task-Manager.jpg"
     },
     {
+        "name": "Movie Trend Analyzer",
+        "description": (
+            "A backend-focused MVP demonstrating real-time movie trend scoring using an event-driven microservices architecture. "
+            "Built with FastAPI, RabbitMQ, PostgreSQL, and Docker Compose, featuring asynchronous communication, "
+            "container orchestration, and a lightweight React-based dashboard."
+        ),
+        "link": {
+            "github": "https://github.com/Noa-Patchornik/movie-trend-analyzer",
+            "live_demo": ""
+        },
+        "tools": ["Python", "FastAPI", "RabbitMQ", "PostgreSQL", "Docker Compose", "React", "NGINX"],
+        "image": "protfolio/assets/images/Movie-trend.jpg"
+    },
+    {
         "name": "Super-Lee HR System",
         "description": (
             "A multi-layer human resources management system built in Java. "
@@ -70,7 +84,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["Java", "SQLite", "OOP", "Design Patterns"],
-        "image": ""
+        "image": "protfolio/assets/images/Super-Lee.png"
     },
     {
         "name": "Super Mario Maze Game",
@@ -83,7 +97,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["Java", "JavaFX", "MVVM", "Algorithms", "Client-Server"],
-        "image": ""
+        "image": "protfolio/assets/images/Maze.jpg"
     },
     {
         "name": "Network Speed Test",
@@ -109,7 +123,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["HTML", "CSS", "JavaScript"],
-        "image": ""
+        "image": "protfolio/assets/images/Frida.jpg"
     },
     {
         "name": "Pacman SpaceShoot Game",
@@ -122,7 +136,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["HTML", "CSS", "JavaScript"],
-        "image": ""
+        "image": "protfolio/assets/images/Pac-Man.jpg"
     }
 ]
 
