@@ -16,12 +16,12 @@ user = {
         "Currently expanding my skills through self-learning and participating in collaborative projects "
         "within the TCP community, working with multidisciplinary teams to build real-world software solutions."
     ),
-    "skills": [
-        "Python", "Java", "C#", "JavaScript", "C", "C++", "Node.js", "React", "Vue", "SQL", "Bash"
-        "MongoDB", "MySQL", "PostgreSQL", "MSSQL", "SQLite"
-        "Docker", "GCP", "Azure DevOps", "Git", "Swagger", 
-        "OOP", "Agile", "FastAPI", "REST APIs",  "Design Patterns"
-    ]
+    "skills": { 
+        "Program Languages": [ "Python", "Java", "C#", "JavaScript", "C", "C++", "Node.js", "React", "Vue", "SQL", "Bash" ],
+        "Databases": [ "MongoDB", "MySQL", "PostgreSQL", "MSSQL", "SQLite" ],
+        "Tools and Platforms": [ "Docker", "GCP", "Azure DevOps", "Git", "Swagger", "Linux", "RabbitMQ" ],
+        "Concepts and Methodologies": [ "OOP", "Agile", "FastAPI", "REST APIs", "Design Patterns", "Microservices", "Client-Server" ]
+    },
 }
 
 # 🌐 Social media and professional links

@@ -169,7 +169,7 @@ async function loadUserInfo() {
         const user = await fetchJSON("user.json");
 
         // Check if user has any info to show
-        if (user.name || user.role || user.bio || (user.skills && user.skills.length)) {
+        if (user.name || user.role || user.bio || (user.skills && Object.keys(user.skills).length)) {
             // 👤 Set user name, role, bio text content or empty string
             document.getElementById("name").textContent = user.name || "";
             document.getElementById("role").textContent = user.role || "";
@@ -177,17 +177,32 @@ async function loadUserInfo() {
 
             const skillsList = document.getElementById("skills-list");
             skillsList.innerHTML = "";
+            
+            if (user.skills && typeof user.skills === 'object' && Object.keys(user.skills).length > 0) {
+                    Object.keys(user.skills).forEach(categoryName => {
+                    const skillsInCategory = user.skills[categoryName];
 
-            // 🛠️ Populate skills list if available
-            if (user.skills && user.skills.length > 0) {
-                user.skills.forEach(skill => {
-                    const li = document.createElement("li");
-                    li.textContent = skill;
-                    skillsList.appendChild(li);
-                });
+                    if (skillsInCategory && skillsInCategory.length > 0) {
+                        const categoryHeader = document.createElement("p");
+                        categoryHeader.className = "skill-category-header section-meta";
+                        categoryHeader.textContent = categoryName + ":";
+                        skillsList.appendChild(categoryHeader);
+
+                        const skillGroup = document.createElement("ul");
+                        skillGroup.className = "skills-group-list";
+                        
+                        skillsInCategory.forEach(skill => {
+                            const li = document.createElement("li");
+                            li.textContent = skill;
+                            skillGroup.appendChild(li);
+                        });
+                        skillsList.appendChild(skillGroup);
+                    }
+                });
             } else {
                 hideSection("skills"); // ❌ Hide Skills if none
             }
+            // *** סוף שינוי קריטי ***
 
             // ✅ Set footer with the user object
             setFooter(user);

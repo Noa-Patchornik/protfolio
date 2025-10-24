@@ -46,31 +46,28 @@ nav ul {
 }
 
 /* Make links fill the height and center content */
+
 nav a.nav-link {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    /* Vertically center icon + text */
+    display: inline-flex;      /* inline so it flows in the ul, flex to center icon+text */
+    align-items: center;       /* vertical centering of icon and text */
+    gap: 0.5rem;               /* space between icon and text (adjust if needed) */
     height: 100%;
-    /* Take full nav height */
-    padding: 0 0.75rem;
-    /* Horizontal spacing */
-    transition: color 0.3s;
+    line-height: 1;            /* avoid extra vertical spacing */
 }
 
-.nav-link i {
-    margin-right: 0;
-    font-size: 1.2rem; /* Slightly larger to balance text visually */
-    display: flex;
+/* base icon rules */
+nav a.nav-link i {
+    display: inline-flex;      /* make icon a flex box so align-items works reliably */
     align-items: center;
     justify-content: center;
     line-height: 1;
     vertical-align: middle;
-    position: relative;
-    top: 1px; /* fine-tune vertical alignment */
+    font-size: 1.1rem;         /* keep consistent size for icons */
+}
+
+/* targeted fine-tune only for the Home icon */
+nav a.nav-link.home i {
+    transform: translateY(2px); /* tweak this value: try 0, 1px, 2px or -1px if needed */
 }
 
 nav a:hover {
