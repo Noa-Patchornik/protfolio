@@ -110,7 +110,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["Python", "Sockets", "Networking", "CLI"],
-        "image": ""
+        "image": "assets/images/Network.png"
     },
     {
         "name": "Frida Kahlo Landing Page",
