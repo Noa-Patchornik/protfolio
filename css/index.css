@@ -41,13 +41,10 @@ header {
 /* Make links fill the height and center content */
 nav a.nav-link {
     color: var(--cream);
-    display: flex;
-
 }
 
 nav a:hover {
     color: var(--coral);
-    
 }
 
 .bio {

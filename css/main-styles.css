@@ -52,6 +52,7 @@ nav a.nav-link {
     font-size: 1.1rem;
     display: flex;
     align-items: center;
+    gap: 6px;
     /* Vertically center icon + text */
     height: 100%;
     /* Take full nav height */
@@ -61,8 +62,8 @@ nav a.nav-link {
 }
 
 .nav-link i {
-    margin-right: 6px;
-    vertical-align: middle;
+    margin-right: 0;
+    /* vertical-align: middle; */
     font-size: 1.1rem;
 }
 

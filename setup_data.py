@@ -44,7 +44,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["Vue 3", "Node.js", "MySQL", "BootstrapVue", "Swagger", "REST API"],
-        "image": ""
+        "image": "protfolio/assets/images/recipes.jpg"
     },
     {
         "name": "Task Management App",
@@ -57,7 +57,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["React", "FastAPI", "Python", "MongoDB", "Docker"],
-        "image": ""
+        "image": "protfolio/assets/images/Task-Manager.jpg"
     },
     {
         "name": "Super-Lee HR System",
