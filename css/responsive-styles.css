@@ -114,26 +114,30 @@
     }
 
     .skills-list {
-        display: flex;
+        display: block;
         flex-direction: row;
         /* Place items in a row */
-        flex-wrap: wrap;
-        /* Allow wrapping to next line if needed */
-        justify-content: center;
+        flex-wrap: wrap; 
         /* Center the entire row of items */
-        gap: 1rem;
+        gap: 0;
         /* Optional: space between items */
         padding: 0;
         list-style: none;
     }
 
     .skills-list li {
-        flex: 1 1 28%;
+        flex: none;
         /* Allow 3 items per row with gap adjustment */
-        max-width: 28%;
+        max-width: none;
         /* Restrict width to roughly 1/3 */
         text-align: center;
         /* Center the text inside */
+    }
+    .skills-group-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: flex-start;
     }
 
     .social-links {
@@ -227,23 +231,22 @@
     }
 
     .skills-list {
-        display: flex;
+        display: block;
         flex-direction: row;
         /* Place items in a row */
-        justify-content: center;
         /* Center the buttons horizontally */
         flex-wrap: wrap;
         /* Wrap if needed for responsiveness */
-        gap: 1rem;
+        gap: 0;
         /* Optional: adds spacing between buttons */
         padding: 0;
         list-style: none;
     }
 
     .skills-list li {
-        flex: 1 1 45%;
+        flex: none;
         /* Make each item take around 45% width */
-        max-width: 45%;
+        max-width: none;
         text-align: center;
     }
 

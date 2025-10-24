@@ -44,7 +44,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["Vue 3", "Node.js", "MySQL", "BootstrapVue", "Swagger", "REST API"],
-        "image": "protfolio/assets/images/recipes.jpg"
+        "image": "assets/images/recipes.jpg"
     },
     {
         "name": "Task Management App",
@@ -57,7 +57,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["React", "FastAPI", "Python", "MongoDB", "Docker"],
-        "image": "protfolio/assets/images/Task-Manager.jpg"
+        "image": "assets/images/Task-Manager.jpg"
     },
     {
         "name": "Movie Trend Analyzer",
@@ -71,7 +71,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["Python", "FastAPI", "RabbitMQ", "PostgreSQL", "Docker Compose", "React", "NGINX"],
-        "image": "protfolio/assets/images/Movie-trend.jpg"
+        "image": "assets/images/Movie-trend.jpg"
     },
     {
         "name": "Super-Lee HR System",
@@ -84,7 +84,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["Java", "SQLite", "OOP", "Design Patterns"],
-        "image": "protfolio/assets/images/Super-Lee.png"
+        "image": "assets/images/Super-Lee.png"
     },
     {
         "name": "Super Mario Maze Game",
@@ -97,7 +97,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["Java", "JavaFX", "MVVM", "Algorithms", "Client-Server"],
-        "image": "protfolio/assets/images/Maze.jpg"
+        "image": "assets/images/Maze.jpg"
     },
     {
         "name": "Network Speed Test",
@@ -123,7 +123,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["HTML", "CSS", "JavaScript"],
-        "image": "protfolio/assets/images/Frida.jpg"
+        "image": "assets/images/Frida.jpg"
     },
     {
         "name": "Pacman SpaceShoot Game",
@@ -136,7 +136,7 @@ projects = [
             "live_demo": ""
         },
         "tools": ["HTML", "CSS", "JavaScript"],
-        "image": "protfolio/assets/images/Pac-Man.jpg"
+        "image": "assets/images/Pac-Man.jpg"
     }
 ]
 
