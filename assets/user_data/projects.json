@@ -14,7 +14,7 @@
             "Swagger",
             "REST API"
         ],
-        "image": "https://img.freepik.com/free-photo/online-recipe-book-food-blogging_53876-138091.jpg"
+        "image": ""
     },
     {
         "name": "Task Management App",
@@ -30,7 +30,7 @@
             "MongoDB",
             "Docker"
         ],
-        "image": "https://cdn-icons-png.flaticon.com/512/1032/1032432.png"
+        "image": ""
     },
     {
         "name": "Super-Lee HR System",
@@ -45,11 +45,11 @@
             "OOP",
             "Design Patterns"
         ],
-        "image": "https://cdn-icons-png.flaticon.com/512/189/189664.png"
+        "image": ""
     },
     {
         "name": "Super Mario Maze Game",
-        "description": "An interactive Super Mario\u2013themed maze game built with JavaFX and MVVM architecture. Implements DFS, BFS, and Best-First algorithms for maze generation and solving.",
+        "description": "An interactive Super Mario-themed maze game built with JavaFX and MVVM architecture. Implements DFS, BFS, and Best-First algorithms for maze generation and solving.",
         "link": {
             "github": "https://github.com/Noa-Patchornik/SuperMario-Maze",
             "live_demo": ""
@@ -61,7 +61,7 @@
             "Algorithms",
             "Client-Server"
         ],
-        "image": "https://cdn-icons-png.flaticon.com/512/3039/3039391.png"
+        "image": ""
     },
     {
         "name": "Network Speed Test",
@@ -76,7 +76,7 @@
             "Networking",
             "CLI"
         ],
-        "image": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+        "image": ""
     },
     {
         "name": "Frida Kahlo Landing Page",
@@ -90,7 +90,7 @@
             "CSS",
             "JavaScript"
         ],
-        "image": "https://cdn-icons-png.flaticon.com/512/616/616408.png"
+        "image": ""
     },
     {
         "name": "Pacman SpaceShoot Game",
@@ -104,6 +104,6 @@
             "CSS",
             "JavaScript"
         ],
-        "image": "https://cdn-icons-png.flaticon.com/512/185/185211.png"
+        "image": ""
     }
 ]
