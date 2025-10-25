@@ -162,11 +162,18 @@ education = [
 
 # 🎯 Hobbies and interests
 hobbies = [
-    {
-        "title": "Learning New Technologies",
-        "publication": "Constantly exploring emerging tools and frameworks to improve development workflows.",
+    {   "title": "Puzzles and Logic Games",
+        "publication": "Engaging in logical and algorithmic challenges to maintain sharp analytical thinking and complex problem-solving abilities.",
+        "link": "" 
+    },
+    {   "title": "Travel and Cultural Encounters",
+        "publication": "Exploring diverse global cultures and environments, fostering adaptability, cross-cultural communication, and an open perspective.",
         "link": ""
     },
+    {   "title": "Learning Natural Languages",
+        "publication": "Systematically acquiring new human languages (e.g., Spanish/French) to enhance memory, focus, and the ability to rapidly master new syntax and complex rule sets.",
+        "link": ""
+    }
 ]
 
 # 📄 Research papers (empty for now)
