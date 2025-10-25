@@ -34,11 +34,6 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-main {
-    max-width: 900px;
-    margin: 6rem auto 2rem;
-    padding-top: 7rem;
-}
 
 /* Increase navbar height and align items vertically */
 nav ul {
@@ -315,6 +310,12 @@ nav a:hover {
     padding: 1rem 0;
     font-size: 1.1rem;
     font-weight: bold;
+}
+
+main {
+    max-width: 900px;
+    margin: 6rem auto 2rem;
+    padding-top: 7rem;
 }
 
 .hidden {
