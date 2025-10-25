@@ -85,6 +85,16 @@ nav a:hover {
     /* Space between sections */
 }
 
+/* Main content container */
+main {
+    max-width: 900px;
+    /* Limit content width */
+    margin: 2rem auto;
+    /* Center the main section */
+    padding-top: 6rem; 
+
+}
+
 /* Home section */
 .home-section {
     text-align: center;
@@ -312,11 +322,6 @@ nav a:hover {
     font-weight: bold;
 }
 
-main {
-    max-width: 900px;
-    margin: 6rem auto 2rem;
-    padding-top: 7rem;
-}
 
 .hidden {
     display: none !important;
