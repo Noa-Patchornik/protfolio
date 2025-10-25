@@ -13,10 +13,6 @@ Purpose: Main stylesheet for the personal portfolio website.
 * {
     box-sizing: border-box;
     /* Include padding and border in element's total width and height */
-    margin: 0;
-    /* Remove default margin */
-    padding: 0;
-    /* Remove default padding */
 }
 
 /* General body styles */
@@ -41,7 +37,7 @@ header {
 main {
     max-width: 900px;
     margin: 6rem auto 2rem;
-    padding-top: 9rem;
+    padding-top: 7rem;
 }
 
 /* Increase navbar height and align items vertically */
@@ -87,15 +83,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Main content container */
-main {
-    max-width: 900px;
-    /* Limit content width */
-    margin: 2rem auto;
-    /* Center the main section */
-    padding: 0 1rem;
-    /* Horizontal padding */
-}
 
 /* Section spacing */
 .section {
