@@ -21,7 +21,6 @@ Purpose: Main stylesheet for the personal portfolio website.
 
 /* General body styles */
 body {
-    padding-top: 6rem;
     font-family: var(--font-main);
     /* Clean, modern font stack */
     line-height: 1.5;
@@ -41,8 +40,8 @@ header {
 
 main {
     max-width: 900px;
-    margin-top: 6rem auto 2rem;
-    padding: 0 1rem;
+    margin: 6rem auto 2rem;
+    padding-top: 7rem;
 }
 
 /* Increase navbar height and align items vertically */
